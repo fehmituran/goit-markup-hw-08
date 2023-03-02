@@ -1,0 +1,18 @@
+ .logo {
+     font-style: normal;
+     font-size: $logo-font-size;
+     color: $accent-color;
+     line-height: 1.2;
+     font-weight: 700;
+     font-family: Raleway, sans-serif;
+     margin-top: 16px;
+     margin-bottom: 16px;
+ }
+
+ footer-logo {
+     font-size: 24px;
+
+     @media screen and (min-width: $desktop) {
+         font-size: 26px;
+     }
+ }

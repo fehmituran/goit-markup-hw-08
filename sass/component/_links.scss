@@ -1,0 +1,172 @@
+
+.nav-link {
+     color: $primary-text-color;
+     padding-top: 32px;
+     padding-bottom: 32px;
+     transition-property: color;
+     transition-duration: 250ms;
+     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+     &:hover,
+     &:focus {
+         color: $accent-color;
+     }
+ }
+
+.nav-active-link {
+     color: $accent-color;
+
+     &::after {
+         position: relative;
+         content: "";
+         display: block;
+         background-color: $accent-color;
+         border-radius: 2px;
+         height: 4px;
+         width: 100%;
+         top: 32px;
+     }
+ }
+
+
+.nav-contacts-link {
+      color: $secondary-text-color;
+      display: flex;
+      align-items: center;
+      
+
+      transition-property: color;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+
+        @media screen and (min-width: $desktop) {
+                padding-top: 32px;
+                padding-bottom: 32px;
+            }
+
+      &:hover,
+      &:focus {
+          color: $accent-color;
+
+          & .nav-contacts-icon {
+              fill: currentColor;
+          }
+      }
+  }
+
+
+  .socialmedia-link {
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      align-items: center;
+      color: $icon-color;
+      background-color: $focus-hover-color-text;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      border: none;
+      cursor: pointer;
+      transition-property: color, background-color;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+      &:hover,
+      &:focus {
+          background-color: $accent-color;
+          color: $focus-hover-color-text;
+
+          & .socialmedia-icon {
+              fill: currentColor;
+          }
+      }
+
+  }
+
+
+  .clients-link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: calc(100vw - 30px);
+      height: 92px;
+      border: 1px solid $icon-color;
+      border-radius: 4px;
+      color: $icon-color;
+      transition-property: color, border;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+      @media screen and (min-width: $mobile) {
+        width: 210px;       
+        }
+
+    @media screen and (min-width: $tablet) {
+        width: 226px;       
+        }
+    
+
+    @media screen and (min-width: $desktop) {
+            width: 170px;          
+    }
+
+
+
+      &:hover,
+      &:focus {
+          border: 1px solid $accent-color;
+          color: $accent-color;
+
+          & .clients-icon {
+              fill: currentColor;
+          }
+      }
+}
+
+.address-link {
+    color: rgba(255, 255, 255, 0.6);
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: $hero-text-color;
+    }
+}
+
+
+.footer-icon-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: $focus-hover-color-text;
+    transition-property: color, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background-color: $accent-color;
+        color: $focus-hover-color-text;
+    }
+}
+
+
+.project-link {
+    display: block;
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus,
+    &:hover {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+            1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+}

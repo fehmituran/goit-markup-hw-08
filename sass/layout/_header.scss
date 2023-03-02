@@ -1,0 +1,109 @@
+.header {
+    border-bottom: 1px solid #ececec;
+
+   
+
+    .nav-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+
+          
+            
+    }
+
+    .navbar {
+            font-style: normal;
+            font-size: $primary-font-size;
+            font-weight: 500;
+            font-family: Roboto, sans-serif;
+            letter-spacing: 0.02em;
+            line-height: 1.2;
+            display: flex;
+            align-items: center;
+
+            
+    }
+   
+    .nav {
+            display: none;
+            align-items: center;
+            
+
+            @media screen and (min-width: $tablet) {
+                    display: flex;
+                    margin-left: 88px;
+            }
+            
+            @media screen and (min-width: $desktop) {
+                    display: flex;
+                    margin-left: 97px;
+            }
+            
+               
+    
+            &-item:not(:last-child) {
+                margin-right: 50px;
+                padding-top: 32px;
+                padding-bottom: 32px;
+            }
+       
+            &-contacts {
+                display: none;
+               
+               
+
+            @media screen and (min-width: $tablet) {
+                    display: block;
+                     margin-right: 15px;
+                    &-item:not(:last-child) {
+                            margin-bottom: 10px;
+                        }     
+            }
+            
+            @media screen and (min-width: $desktop) {
+                    display: flex;
+                    margin-left: 97px;
+                    align-items: center;
+                    
+
+                 &-item:not(:last-child) {
+                    margin-right: 50px;
+                    margin-bottom: 0;
+                }      
+            }
+            
+
+              
+    
+              
+                &-icon {
+                    margin-right: 10px;
+                    fill: currentColor;
+    
+                    &-nav {
+                        margin-right: 10px;
+                    }
+                }
+            }
+    }
+
+
+  
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

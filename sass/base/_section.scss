@@ -1,0 +1,22 @@
+.section {
+    padding: 60px 0;
+    
+        @media screen and (min-width: $desktop) {
+            padding: 94px 0;
+        }
+}
+
+.section-heading {
+    font-weight: 700;
+    font-size: $section-heading-font;
+    text-align: center;
+    letter-spacing: 0.03em;
+    line-height: 1.17;
+    margin-bottom: 30px;
+
+    @media screen and (min-width: $desktop) {
+            margin-bottom: 50px;
+            font-size: 36px;
+            line-height: 1.2;
+    }
+}

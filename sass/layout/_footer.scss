@@ -1,0 +1,172 @@
+/*============"footer"=============*/
+
+.address {
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    margin-top: 13px;
+
+    @media screen and (min-width: $desktop) {
+            margin-top: 9px;
+        }
+}
+
+.footer {
+    background-color: $hero-footer-background-color;
+    padding: 60px 0;  
+
+    &-container {           
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+        @media screen and (min-width: $tablet) {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                align-items: baseline;
+                padding-left: 76px;
+                padding-right: 89px;
+                justify-content: space-evenly;               
+            }
+                           
+         @media screen and (min-width: $desktop) {
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: center;                    
+        }
+    }
+
+
+
+   &-address {
+    display: block;
+    text-align: center;
+
+      @media screen and (min-width: $desktop) {
+            text-align: left;
+        }
+   }
+
+    &-icon {      
+        margin-top: 48px;
+        display: block;
+        text-align: center;
+
+        @media screen and (min-width: $tablet) {
+                margin-top: 0;
+                margin-left: 165px;
+            }
+
+         @media screen and (min-width: $desktop) {
+                    margin-left: 70px;
+                    text-align: left;
+        }
+
+        &-list {
+                display: flex;
+                align-items: center;
+        }
+
+        &-item:not(:last-child) {
+            margin-right: 10px;
+        }
+    }
+
+    &-header {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.2;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: $hero-text-color;
+        margin-top: 15px;
+        margin-bottom: 20px;
+    } 
+}
+
+
+.footer-socials-icon {
+    fill: currentColor;
+}
+
+.footer-subscribe {
+        margin-top: 60px;
+        display: block;
+        text-align: center;
+    
+        @media screen and (min-width: $tablet) {
+            margin-top: 52px; 
+        }
+    
+        @media screen and (min-width: $desktop) {
+            margin-left: 93px;
+            text-align: left;
+        }
+}
+
+.subscription-input {
+   
+    width: calc(100vw - 30px);
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: transparent;
+    padding-left: 16px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+
+    margin-bottom: 20px;
+
+    transition-property: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &::placeholder {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 1.25;
+            letter-spacing: 0.03em;
+            color: rgba(255, 255, 255, 0.6);
+    }
+
+    &:focus-within {
+            border-color: $accent-color;
+            outline: none;
+    }
+
+    @media screen and (min-width: $mobile) {
+        width: 450px; 
+    }
+    
+      @media screen and (min-width: 1200px) {
+        margin-bottom: 0px;
+        width: 358px;  
+    }
+}
+
+
+
+
+.subscribe-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and (min-width: $desktop) {
+        flex-direction: row;
+        align-items: center;
+        }
+}
+
+.subscription-icon {
+    fill: currentColor;
+    margin-left: 30px;
+}
+

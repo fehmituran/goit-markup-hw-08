@@ -1,0 +1,53 @@
+/* ====WEDO===*/
+
+
+.wedo {
+
+    display: flex;
+    justify-content: space-between;
+
+    &-section {
+            padding-top: 0;
+
+            display: none;
+            @media screen and (min-width: $desktop) {
+                    display: flex;   
+                }
+    }
+
+    &-container {
+        
+
+        display: none;
+        
+            @media screen and (min-width: $desktop) {
+                display: flex;
+                flex-direction: column;
+            }
+    }
+
+    &-item {
+        position: relative;
+    }
+
+    &-overlay {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        background: rgba(47, 48, 58, 0.8);
+        height: 70px;
+        padding: 27px 0;
+    
+        color: $focus-hover-color-text;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.2;
+        text-align: center;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+    }
+}
+
+
+
